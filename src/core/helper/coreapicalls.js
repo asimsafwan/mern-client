@@ -1,7 +1,7 @@
 import { API } from "../../backend";
 
 export const getProducts = () => {
-  return fetch(`${API}/products`, { method: "GET" })
+  return fetch(`https://asimsafwan.herokuapp.com/products`, { method: "GET" })
     .then(response => {
       return response.json();
     })

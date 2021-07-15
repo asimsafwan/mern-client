@@ -37,7 +37,7 @@ const StripeCheckout = ({
     const headers = {
       "Content-Type": "application/json"
     };
-    return fetch(`${API}/stripepayment`, {
+    return fetch(`https://asimsafwan.herokuapp.com/stripepayment`, {
       method: "POST",
       headers,
       body: JSON.stringify(body)
